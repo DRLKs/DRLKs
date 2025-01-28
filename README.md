@@ -1,6 +1,6 @@
 
 <div align="center">
-  <img src="https://github.com/DRLKs/DRLKs/figures/github_logo?raw=true" width="60%" alt="GitHub" />
+  <img src="https://github.com/DRLKs/DRLKs/blob/main/figures/github_logo.png?raw=true" width="60%" alt="GitHub" />
 </div>
 
 # HELLO 👋​👋​

@@ -22,12 +22,9 @@
 
 <hr>
 
-<h1 align="center">HELLO 👋​👋​</h1>
+# HELLO 👋​👋​
 
-<div align="center">
-  <p>I am DRLK, I'm from Spain and I love programming weird things.</p>
-  <ul style="list-style-type: none; padding: 0;">
-    <li>I am currently studying software engineering.</li>
-    <li>I still don't have work experience, but I have some small projects open.</li>
-  </ul>
-</div>
+I am DRLK, I'm from Spain and I love programming weird things.
+
+- **Currently**: Studying software engineering.
+- **Experience**: No formal work experience yet, but I have some small projects open.

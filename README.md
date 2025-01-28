@@ -1,3 +1,8 @@
+
+<div align="center">
+  <img src="https://github.com/DRLKs/DRLKs/figures/github_logo?raw=true" width="60%" alt="GitHub" />
+</div>
+
 # HELLO 👋​👋​
 I am DRLK, I'm from Spain and I love programming weird things
 * I am currently studying software engineering

@@ -23,15 +23,6 @@
 <!-- Contenido principal -->
 <div align="center">
 
-<!-- GitHub Stats con modo claro/oscuro -->
-<div align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api?username=DRLKs&show_icons=true&theme=dark&hide_border=true&include_all_commits=true&count_private=true">
-    <source media="(prefers-color-scheme: light)" srcset="https://github-readme-stats.vercel.app/api?username=DRLKs&show_icons=true&theme=default&hide_border=true&include_all_commits=true&count_private=true">
-    <img alt="GitHub Stats" src="https://github-readme-stats.vercel.app/api?username=DRLKs&show_icons=true&theme=default&hide_border=true&include_all_commits=true&count_private=true">
-  </picture>
-</div>
-
 <!-- Lenguajes más usados -->
 <div align="center">
   <picture>

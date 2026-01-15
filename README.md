@@ -1,54 +1,6 @@
 <div align="center">
 
-# DRLKs
-
-<div align="center">
-  
-```text
-╔══════════════════════════════════════════════════════════╗
-║  Software Developer  |  Systems Engineering Student     ║
-╚══════════════════════════════════════════════════════════╝
-```
-
-</div>
-
 ## Tech Stack
-
-<table>
-<tr>
-<td width="50%" valign="top">
-
-### Languages
-```text
-▓▓▓▓▓▓▓▓▓░ Java
-▓▓▓▓▓▓▓▓░░ C/C++
-▓▓▓▓▓▓▓░░░ Python
-▓▓▓▓▓▓░░░░ C#
-▓▓▓▓░░░░░░ Rust
-▓▓▓░░░░░░░ Haskell
-▓▓░░░░░░░░ SQL/R/Bash/Assembly
-```
-
-</td>
-<td width="50%" valign="top">
-
-### Skills
-```text
-→ Systems Programming
-→ Backend Development
-→ Data Structures & Algorithms
-→ Low-Level Programming
-→ Functional Programming
-→ Database Design
-```
-
-</td>
-</tr>
-</table>
-
-<details>
-<summary><b>🔧 Technologies</b></summary>
-<br>
 
 <p align="center">
 <img src="https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white" />
@@ -64,9 +16,9 @@
 <img src="https://img.shields.io/badge/Assembly-0091BD?style=for-the-badge&logo=assemblyscript&logoColor=white" />
 </p>
 
-</details>
-
 ---
+
+## GitHub Stats
 
 <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=DRLKs&theme=github_dark" width="100%" />
 
@@ -78,15 +30,5 @@
 <img src="https://github-readme-activity-graph.vercel.app/graph?username=DRLKs&theme=github-compact&hide_border=true" width="100%" />
 
 ---
-
-<div align="center">
-  
-```diff
-+ Building the future, one commit at a time
-```
-
-</div>
-
-<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=100&section=footer" width="100%" />
 
 </div>

@@ -1,32 +1,15 @@
 const navLinks = Array.from(document.querySelectorAll('.sidebar__nav a'));
-const sections = navLinks
+const sectionLinks = navLinks.filter((link) => link.getAttribute('href')?.startsWith('#'));
+const sections = sectionLinks
   .map((link) => document.querySelector(link.getAttribute('href')))
   .filter(Boolean);
-const revealItems = document.querySelectorAll('[data-reveal]');
 const sectionVisibility = new Map();
 
 const setActiveLink = (hash) => {
-  navLinks.forEach((link) => {
+  sectionLinks.forEach((link) => {
     link.classList.toggle('is-active', link.getAttribute('href') === hash);
   });
 };
-
-const revealObserver = new IntersectionObserver(
-  (entries) => {
-    entries.forEach((entry) => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('is-visible');
-        revealObserver.unobserve(entry.target);
-      }
-    });
-  },
-  {
-    threshold: 0.16,
-    rootMargin: '0px 0px -8% 0px',
-  }
-);
-
-revealItems.forEach((item) => revealObserver.observe(item));
 
 const sectionObserver = new IntersectionObserver(
   (entries) => {
@@ -50,8 +33,10 @@ const sectionObserver = new IntersectionObserver(
 
 sections.forEach((section) => sectionObserver.observe(section));
 
-navLinks.forEach((link) => {
+sectionLinks.forEach((link) => {
   link.addEventListener('click', () => {
     setActiveLink(link.getAttribute('href'));
   });
 });
+
+setActiveLink(window.location.hash || '#about');

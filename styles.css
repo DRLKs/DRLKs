@@ -26,7 +26,7 @@
 }
 
 html {
-  scroll-behavior: smooth;
+  scroll-behavior: auto;
 }
 
 body {
@@ -34,6 +34,7 @@ body {
   min-height: 100vh;
   font-family: var(--font-body);
   color: var(--text);
+  overflow-x: hidden;
   background:
     radial-gradient(circle at 10% 10%, rgba(32, 82, 96, 0.3), transparent 20%),
     radial-gradient(circle at 85% 15%, rgba(129, 73, 35, 0.18), transparent 16%),
@@ -85,8 +86,8 @@ img {
   width: 32rem;
   height: 32rem;
   border-radius: 50%;
-  filter: blur(92px);
-  opacity: 0.24;
+  filter: blur(64px);
+  opacity: 0.16;
 }
 
 .page-orb--teal {
@@ -199,12 +200,13 @@ img {
   display: inline-flex;
   align-items: center;
   gap: 1.1rem;
+  width: fit-content;
   color: rgba(151, 166, 191, 0.78);
   font-size: 0.92rem;
   font-weight: 800;
   letter-spacing: 0.12em;
   text-transform: uppercase;
-  transition: color 220ms ease, transform 220ms ease;
+  transition: color 220ms ease, transform 220ms ease, opacity 220ms ease;
 }
 
 .sidebar__nav a::before {
@@ -219,12 +221,17 @@ img {
 .sidebar__nav a.is-active {
   color: var(--text);
   transform: translateX(0.2rem);
+  opacity: 1;
 }
 
 .sidebar__nav a:hover::before,
 .sidebar__nav a.is-active::before {
   width: 5rem;
-  background: rgba(238, 244, 255, 0.88);
+  background: var(--accent);
+}
+
+.sidebar__nav a.is-active {
+  text-shadow: 0 0 16px rgba(99, 229, 211, 0.18);
 }
 
 .sidebar__links a {
@@ -241,6 +248,12 @@ img {
   font-weight: 800;
   letter-spacing: 0.08em;
   text-transform: uppercase;
+}
+
+.sidebar__links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
 }
 
 .content {
@@ -375,14 +388,27 @@ h1 {
 .project-card,
 .mini-project,
 .timeline__item,
-.contact-card {
+.contact-card,
+.cv-card {
   position: relative;
   overflow: hidden;
   background: var(--surface);
   border: 1px solid rgba(255, 255, 255, 0.08);
   border-radius: var(--radius);
   box-shadow: var(--shadow-soft);
-  backdrop-filter: blur(16px);
+}
+
+.about-copy {
+  display: grid;
+  gap: 1.25rem;
+  max-width: 60rem;
+}
+
+.about-copy p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 1.06rem;
+  line-height: 1.9;
 }
 
 .panel {
@@ -483,7 +509,7 @@ h1 {
 
 .project-card__visual {
   position: relative;
-  min-height: 19rem;
+  min-height: 15rem;
   overflow: hidden;
   display: flex;
   align-items: end;
@@ -574,7 +600,7 @@ h1 {
 }
 
 .compact-projects {
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   margin-top: 1.2rem;
 }
 
@@ -589,15 +615,15 @@ h1 {
   margin: 0;
 }
 
-[data-reveal] {
-  opacity: 0;
-  transform: translateY(24px);
-  transition: opacity 700ms ease, transform 700ms ease;
+.cv-card {
+  padding: 1.4rem;
 }
 
-[data-reveal].is-visible {
-  opacity: 1;
-  transform: translateY(0);
+.cv-card p {
+  max-width: 44rem;
+  margin: 0;
+  color: var(--muted);
+  line-height: 1.8;
 }
 
 @media (max-width: 960px) {
@@ -658,10 +684,5 @@ h1 {
   *::after {
     animation: none !important;
     transition: none !important;
-  }
-
-  [data-reveal] {
-    opacity: 1;
-    transform: none;
   }
 }

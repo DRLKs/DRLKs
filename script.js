@@ -1,42 +1,47 @@
-const navLinks = Array.from(document.querySelectorAll('.sidebar__nav a'));
-const sectionLinks = navLinks.filter((link) => link.getAttribute('href')?.startsWith('#'));
-const sections = sectionLinks
-  .map((link) => document.querySelector(link.getAttribute('href')))
-  .filter(Boolean);
-const sectionVisibility = new Map();
+// Scroll spy for navigation
+const navLinks = document.querySelectorAll('.nav__link');
+const sections = document.querySelectorAll('.section[id]');
 
-const setActiveLink = (hash) => {
-  sectionLinks.forEach((link) => {
-    link.classList.toggle('is-active', link.getAttribute('href') === hash);
+const setActive = (id) => {
+  navLinks.forEach((link) => {
+    const isActive = link.getAttribute('href') === `#${id}`;
+    link.classList.toggle('is-active', isActive);
   });
 };
 
-const sectionObserver = new IntersectionObserver(
+const observer = new IntersectionObserver(
   (entries) => {
     entries.forEach((entry) => {
-      sectionVisibility.set(entry.target.id, entry.isIntersecting ? entry.intersectionRatio : 0);
+      if (entry.isIntersecting) {
+        setActive(entry.target.id);
+      }
     });
-
-    const [activeSection] = [...sectionVisibility.entries()]
-      .sort((left, right) => right[1] - left[1])
-      .filter(([, ratio]) => ratio > 0);
-
-    if (activeSection) {
-      setActiveLink(`#${activeSection[0]}`);
-    }
   },
   {
-    threshold: 0.35,
-    rootMargin: '-10% 0px -40% 0px',
+    rootMargin: '-20% 0px -60% 0px',
+    threshold: 0,
   }
 );
 
-sections.forEach((section) => sectionObserver.observe(section));
+sections.forEach((section) => observer.observe(section));
 
-sectionLinks.forEach((link) => {
-  link.addEventListener('click', () => {
-    setActiveLink(link.getAttribute('href'));
+// Click handlers
+navLinks.forEach((link) => {
+  link.addEventListener('click', (e) => {
+    const id = link.getAttribute('href').replace('#', '');
+    setActive(id);
   });
 });
 
-setActiveLink(window.location.hash || '#about');
+// Mouse glow effect
+document.addEventListener('mousemove', (e) => {
+  document.documentElement.style.setProperty('--mouse-x', e.clientX + 'px');
+  document.documentElement.style.setProperty('--mouse-y', e.clientY + 'px');
+});
+
+// Set initial active
+if (window.location.hash) {
+  setActive(window.location.hash.replace('#', ''));
+} else {
+  setActive('about');
+}

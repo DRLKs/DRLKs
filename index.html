@@ -11,303 +11,372 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300..700&family=Manrope:wght@200..800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <div class="page-noise" aria-hidden="true"></div>
-    <div class="page-orb page-orb--teal" aria-hidden="true"></div>
-    <div class="page-orb page-orb--amber" aria-hidden="true"></div>
-
-    <div class="shell">
-      <aside class="sidebar">
-        <div class="sidebar__inner">
-          <a class="identity" href="#top" aria-label="Go to top">
-            <span class="identity__avatar-wrap">
-              <img
-                class="identity__avatar"
-                src="https://github.com/DRLKs.png?size=256"
-                alt="David Muñoz del Valle profile picture"
-                width="256"
-                height="256"
-              />
-              <span class="identity__badge">DM</span>
-            </span>
-            <span class="identity__copy">
-              <strong>David Muñoz del Valle</strong>
-              <span>Software Engineer</span>
-            </span>
-          </a>
-
-          <div class="sidebar__intro">
-            <p>
-              Backend engineer with strong overlap in data engineering, cloud
-              infrastructure, and systems integration.
-            </p>
-            <p>
-              Based in Malaga. Focused on building reliable software that is clean
-              to operate and easy to extend.
+    <div class="layout">
+      <header class="header">
+        <div class="header__inner">
+          <div class="header__top">
+            <h1><a href="#top">David Muñoz del Valle</a></h1>
+            <h2>Software Engineer</h2>
+            <p class="header__subtitle">
+              I build reliable backend systems, data pipelines, and cloud infrastructure.
             </p>
           </div>
 
-          <nav class="sidebar__nav" aria-label="Section navigation">
-            <a href="#about">About</a>
-            <a href="#experience">Experience</a>
-            <a href="#projects">Projects</a>
-            <a href="cv.pdf">CV</a>
+          <nav class="nav" aria-label="Section navigation">
+            <ul>
+              <li><a href="#about" class="nav__link"><span class="nav__indicator"></span><span class="nav__text">About</span></a></li>
+              <li><a href="#experience" class="nav__link"><span class="nav__indicator"></span><span class="nav__text">Experience</span></a></li>
+              <li><a href="#projects" class="nav__link"><span class="nav__indicator"></span><span class="nav__text">Projects</span></a></li>
+            </ul>
           </nav>
 
-          <div class="sidebar__links">
-            <a href="https://github.com/DRLKs" target="_blank" rel="noreferrer">GitHub</a>
-            <a href="cv.pdf" target="_blank" rel="noreferrer">CV PDF</a>
-          </div>
+          <ul class="social" aria-label="Social links">
+            <li>
+              <a href="https://github.com/DRLKs" target="_blank" rel="noreferrer" aria-label="GitHub (opens in a new tab)" title="GitHub">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true" width="24" height="24">
+                  <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="https://linkedin.com/in/david-munoz-del-valle" target="_blank" rel="noreferrer" aria-label="LinkedIn (opens in a new tab)" title="LinkedIn">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" width="24" height="24">
+                  <path d="M20.5 2h-17A1.5 1.5 0 002 3.5v17A1.5 1.5 0 003.5 22h17a1.5 1.5 0 001.5-1.5v-17A1.5 1.5 0 0020.5 2zM8 19H5v-9h3zM6.5 8.25A1.75 1.75 0 118.3 6.5a1.78 1.78 0 01-1.8 1.75zM19 19h-3v-4.74c0-1.42-.6-1.93-1.38-1.93A1.74 1.74 0 0013 14.19a.66.66 0 000 .14V19h-3v-9h2.9v1.3a3.11 3.11 0 012.7-1.4c1.55 0 3.36.86 3.36 3.66z"/>
+                </svg>
+              </a>
+            </li>
+          </ul>
         </div>
-      </aside>
+      </header>
 
-      <main class="content" id="top">
-        <section class="hero section">
-          <p class="eyebrow">Software engineer · backend · data engineering · cloud</p>
-          <h1>
-            Building backend systems that stay clear, reliable, and production-ready.
-          </h1>
-          <p class="hero__lede">
-            I am David Muñoz del Valle, a software engineer with a strong bias
-            toward backend development, data workflows, and cloud infrastructure.
-            I enjoy the layer where architecture, integration, deployment, and
-            product constraints all need to work together without friction.
+      <main id="top" class="main">
+        <section id="about" class="section" aria-label="About me">
+          <div class="section__header-mobile">
+            <h2>About</h2>
+          </div>
+          <div class="section__content">
+            <p>
+              I'm a software engineer based in Malaga with a strong bias toward
+              <strong>backend development</strong>, <strong>data engineering</strong>,
+              and <strong>cloud infrastructure</strong>. I like working close to the
+              technical core of a product, especially when the challenge involves APIs,
+              data flows, deployment, and system integration.
+            </p>
+            <p>
+              My profile is strongest when a team needs someone who can build clean services,
+              think about how they run in production, and connect the engineering work to something
+              useful and real. <strong>Rust</strong> is a defining part of my technical identity, but I also work
+              comfortably with Python, PostgreSQL, Docker, AWS, OCI, Linux, and the tooling around
+              delivery and operations.
+            </p>
+            <p>
+              I studied software engineering in Malaga and care about sound fundamentals:
+              algorithms, modeling, data structures, system design, and maintainability.
+              In practice, that usually translates into software that is not only implemented well,
+              but also easier to deploy, operate, and extend over time.
+            </p>
+          </div>
+        </section>
+
+        <section id="experience" class="section" aria-label="Work experience">
+          <div class="section__header-mobile">
+            <h2>Experience</h2>
+          </div>
+          <div class="section__content">
+            <ol class="experience-list">
+              <li class="experience-item">
+                <div class="experience-item__header">
+                  <span class="experience-item__date">2026 — Present</span>
+                  <div class="experience-item__info">
+                    <h3>Machine Learning and Data Analysis · <span class="experience-item__company">BHS Corrugated Spain</span></h3>
+                    <p>
+                      Architected scalable PostgreSQL-based data pipelines for extraction,
+                      feature engineering, and validation. Improved the production deployment
+                      lifecycle of predictive models through CI/CD integration and MLOps practices,
+                      helping align data science and engineering in a demanding industrial environment.
+                    </p>
+                    <ul class="tag-list" aria-label="Technologies used">
+                      <li class="tag">PostgreSQL</li>
+                      <li class="tag">Python</li>
+                      <li class="tag">CI/CD</li>
+                      <li class="tag">MLOps</li>
+                      <li class="tag">Production Systems</li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+
+              <li class="experience-item">
+                <div class="experience-item__header">
+                  <span class="experience-item__date">Ongoing</span>
+                  <div class="experience-item__info">
+                    <h3>Hackathons, collaboration, and fast delivery</h3>
+                    <p>
+                      Repeated contributor in collaborative projects involving FastAPI,
+                      Oracle Autonomous Database, React, Docker, AWS, and OCI. I usually
+                      take ownership where backend, deployment, and system integration need
+                      to come together quickly.
+                    </p>
+                    <ul class="tag-list" aria-label="Technologies used">
+                      <li class="tag">FastAPI</li>
+                      <li class="tag">Docker</li>
+                      <li class="tag">AWS</li>
+                      <li class="tag">OCI</li>
+                      <li class="tag">React</li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+            </ol>
+
+            <div class="section__footer">
+              <a class="inline-link" href="cv.pdf" target="_blank" rel="noreferrer">
+                View Full Resume
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" width="16" height="16">
+                  <path fill-rule="evenodd" d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z" clip-rule="evenodd"/>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </section>
+
+        <section id="projects" class="section" aria-label="Selected projects">
+          <div class="section__header-mobile">
+            <h2>Projects</h2>
+          </div>
+          <div class="section__content">
+            <ol class="project-list">
+              <li class="project-item">
+                <a class="project-item__link" href="https://github.com/DRLKs/roma" target="_blank" rel="noreferrer">
+                  <div class="project-item__inner">
+                    <div class="project-item__image-wrap">
+                      <img src="aux/roma-rust-logo.png" alt="roma project logo" loading="lazy" decoding="async" width="200" height="200" />
+                    </div>
+                    <div class="project-item__info">
+                      <h3>
+                        roma
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" width="16" height="16">
+                          <path fill-rule="evenodd" d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z" clip-rule="evenodd"/>
+                        </svg>
+                      </h3>
+                      <p>
+                        Metaheuristic optimization framework built in Rust with a focus on
+                        performance, scalability, and full technical control. Zero external dependencies.
+                      </p>
+                      <ul class="tag-list" aria-label="Technologies used">
+                        <li class="tag">Rust</li>
+                        <li class="tag">Performance</li>
+                        <li class="tag">Zero Dependencies</li>
+                      </ul>
+                    </div>
+                  </div>
+                </a>
+              </li>
+
+              <li class="project-item">
+                <a class="project-item__link" href="https://github.com/arrozet/dr-artificial" target="_blank" rel="noreferrer">
+                  <div class="project-item__inner">
+                    <div class="project-item__image-wrap">
+                      <img src="aux/dr-artificial-demo.gif" alt="Dr. Artificial demo" loading="lazy" decoding="async" width="200" height="112" />
+                    </div>
+                    <div class="project-item__info">
+                      <h3>
+                        Dr. Artificial
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" width="16" height="16">
+                          <path fill-rule="evenodd" d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z" clip-rule="evenodd"/>
+                        </svg>
+                      </h3>
+                      <p>
+                        Medical assistant prototype with a web interface, Python backend,
+                        embeddings, and retrieval workflows aimed at real product utility.
+                      </p>
+                      <ul class="tag-list" aria-label="Technologies used">
+                        <li class="tag">Python</li>
+                        <li class="tag">LLMs</li>
+                        <li class="tag">Embeddings</li>
+                        <li class="tag">RAG</li>
+                      </ul>
+                    </div>
+                  </div>
+                </a>
+              </li>
+
+              <li class="project-item">
+                <a class="project-item__link" href="https://github.com/arrozet/basmati" target="_blank" rel="noreferrer">
+                  <div class="project-item__inner">
+                    <div class="project-item__image-wrap">
+                      <img src="aux/basmati/basmati-screenshot.png" alt="Basmati calendar platform screenshot" loading="lazy" decoding="async" width="200" height="133" />
+                    </div>
+                    <div class="project-item__info">
+                      <h3>
+                        basmati
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" width="16" height="16">
+                          <path fill-rule="evenodd" d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z" clip-rule="evenodd"/>
+                        </svg>
+                      </h3>
+                      <p>
+                        Collaborative calendar and events platform built with React, Vite, FastAPI, MongoDB,
+                        Docker, and cloud integrations including Google Calendar, Teamup, OpenStreetMap, and AWS S3.
+                      </p>
+                      <ul class="tag-list" aria-label="Technologies used">
+                        <li class="tag">React</li>
+                        <li class="tag">FastAPI</li>
+                        <li class="tag">Docker</li>
+                        <li class="tag">AWS</li>
+                      </ul>
+                    </div>
+                  </div>
+                </a>
+              </li>
+
+              <li class="project-item">
+                <a class="project-item__link" href="https://github.com/DRLKs/PokerHelper" target="_blank" rel="noreferrer">
+                  <div class="project-item__inner">
+                    <div class="project-item__info">
+                      <h3>
+                        PokerHelper
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" width="16" height="16">
+                          <path fill-rule="evenodd" d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z" clip-rule="evenodd"/>
+                        </svg>
+                      </h3>
+                      <p>Rust desktop software for computer vision, statistical support, and Texas Hold'em decision tooling.</p>
+                      <ul class="tag-list" aria-label="Technologies used">
+                        <li class="tag">Rust</li>
+                        <li class="tag">Computer Vision</li>
+                        <li class="tag">Statistics</li>
+                      </ul>
+                    </div>
+                  </div>
+                </a>
+              </li>
+
+              <li class="project-item">
+                <a class="project-item__link" href="https://github.com/arrozet/brain" target="_blank" rel="noreferrer">
+                  <div class="project-item__inner">
+                    <div class="project-item__info">
+                      <h3>
+                        Brain
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" width="16" height="16">
+                          <path fill-rule="evenodd" d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z" clip-rule="evenodd"/>
+                        </svg>
+                      </h3>
+                      <p>FastAPI backend with secure Oracle Autonomous Database integration for an AI-assisted chat product.</p>
+                      <ul class="tag-list" aria-label="Technologies used">
+                        <li class="tag">FastAPI</li>
+                        <li class="tag">Oracle ADB</li>
+                        <li class="tag">Python</li>
+                      </ul>
+                    </div>
+                  </div>
+                </a>
+              </li>
+
+              <li class="project-item">
+                <a class="project-item__link" href="https://github.com/DRLKs/VMware-vSphere-ESXi-Library" target="_blank" rel="noreferrer">
+                  <div class="project-item__inner">
+                    <div class="project-item__info">
+                      <h3>
+                        VMware vSphere ESXi Library
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" width="16" height="16">
+                          <path fill-rule="evenodd" d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z" clip-rule="evenodd"/>
+                        </svg>
+                      </h3>
+                      <p>Bash CLI toolkit for provisioning, cloning, and destroying virtual machines on ESXi.</p>
+                      <ul class="tag-list" aria-label="Technologies used">
+                        <li class="tag">Bash</li>
+                        <li class="tag">VMware</li>
+                        <li class="tag">ESXi</li>
+                      </ul>
+                    </div>
+                  </div>
+                </a>
+              </li>
+
+              <li class="project-item">
+                <a class="project-item__link" href="https://github.com/DRLKs/WikiMovies" target="_blank" rel="noreferrer">
+                  <div class="project-item__inner">
+                    <div class="project-item__info">
+                      <h3>
+                        WikiMovies
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" width="16" height="16">
+                          <path fill-rule="evenodd" d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z" clip-rule="evenodd"/>
+                        </svg>
+                      </h3>
+                      <p>Java and Spring Boot backend project focused on data modeling and business logic with MySQL.</p>
+                      <ul class="tag-list" aria-label="Technologies used">
+                        <li class="tag">Java</li>
+                        <li class="tag">Spring Boot</li>
+                        <li class="tag">MySQL</li>
+                      </ul>
+                    </div>
+                  </div>
+                </a>
+              </li>
+
+              <li class="project-item">
+                <a class="project-item__link" href="https://github.com/DRLKs/Monkey-Pop" target="_blank" rel="noreferrer">
+                  <div class="project-item__inner">
+                    <div class="project-item__info">
+                      <h3>
+                        Monkey-Pop
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" width="16" height="16">
+                          <path fill-rule="evenodd" d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z" clip-rule="evenodd"/>
+                        </svg>
+                      </h3>
+                      <p>React-based web game showing frontend delivery and product polish in a smaller scope.</p>
+                      <ul class="tag-list" aria-label="Technologies used">
+                        <li class="tag">React</li>
+                        <li class="tag">JavaScript</li>
+                      </ul>
+                    </div>
+                  </div>
+                </a>
+              </li>
+
+              <li class="project-item">
+                <a class="project-item__link" href="https://github.com/DRLKs/MyLeetCode" target="_blank" rel="noreferrer">
+                  <div class="project-item__inner">
+                    <div class="project-item__info">
+                      <h3>
+                        MyLeetCode
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" width="16" height="16">
+                          <path fill-rule="evenodd" d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z" clip-rule="evenodd"/>
+                        </svg>
+                      </h3>
+                      <p>Algorithmic practice in C with a low-level engineering mindset.</p>
+                      <ul class="tag-list" aria-label="Technologies used">
+                        <li class="tag">C</li>
+                        <li class="tag">Algorithms</li>
+                      </ul>
+                    </div>
+                  </div>
+                </a>
+              </li>
+            </ol>
+
+            <div class="section__footer">
+              <a class="inline-link" href="https://github.com/DRLKs?tab=repositories" target="_blank" rel="noreferrer">
+                View Full Project Archive
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" width="16" height="16">
+                  <path fill-rule="evenodd" d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z" clip-rule="evenodd"/>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </section>
+
+        <footer class="footer">
+          <p>
+            Loosely inspired by <a href="https://brittanychiang.com" target="_blank" rel="noreferrer">Brittany Chiang</a>.
+            Built with vanilla HTML &amp; CSS, deployed with <a href="https://pages.github.com/" target="_blank" rel="noreferrer">GitHub Pages</a>.
           </p>
-          <div class="hero__actions">
-            <a class="button button--primary" href="#projects">View projects</a>
-            <a class="button button--ghost" href="https://github.com/DRLKs" target="_blank" rel="noreferrer">Open GitHub</a>
-          </div>
-        </section>
-
-        <section class="section" id="about">
-          <div class="section-heading">
-            <p class="eyebrow">About</p>
-            <h2>Personal, technical, and grounded in practical software engineering.</h2>
-          </div>
-
-          <div class="about-copy">
-            <p>
-              I am a software engineer based in Malaga with a strong bias toward backend development,
-              data engineering, and cloud infrastructure. I like working close to the technical core of a product,
-              especially when the challenge involves APIs, data flows, deployment, and system integration.
-            </p>
-            <p>
-              My profile is strongest when a team needs someone who can build clean services, think about how they
-              run in production, and connect the engineering work to something useful and real. Rust is a defining
-              part of my technical identity, but I also work comfortably with Python, PostgreSQL, Docker, AWS, OCI,
-              Linux, and the tooling around delivery and operations.
-            </p>
-            <p>
-              I studied software engineering in Malaga and I care about sound fundamentals: algorithms, modeling,
-              data structures, system design, and maintainability. In practice, that usually translates into software
-              that is not only implemented well, but also easier to deploy, operate, and extend over time.
-            </p>
-          </div>
-        </section>
-
-        <section class="section" id="experience">
-          <div class="section-heading">
-            <p class="eyebrow">Experience</p>
-            <h2>Production-facing engineering across data, deployment, and platform reliability.</h2>
-          </div>
-
-          <div class="timeline">
-            <article class="timeline__item">
-              <div class="timeline__meta">
-                <span>2026 — Present</span>
-              </div>
-              <div class="timeline__body">
-                <h3>Machine Learning and Data Analysis · BHS Corrugated Spain</h3>
-                <p>
-                  Architected scalable PostgreSQL-based data pipelines for extraction,
-                  feature engineering, and validation. Improved the production deployment
-                  lifecycle of predictive models through CI/CD integration and MLOps practices,
-                  helping align data science and engineering in a demanding industrial environment.
-                </p>
-                <div class="timeline__tags">
-                  <span>PostgreSQL</span>
-                  <span>CI/CD</span>
-                  <span>MLOps</span>
-                  <span>Production systems</span>
-                </div>
-              </div>
-            </article>
-
-            <article class="timeline__item">
-              <div class="timeline__meta">
-                <span>Ongoing</span>
-              </div>
-              <div class="timeline__body">
-                <h3>Hackathons, collaboration, and fast delivery</h3>
-                <p>
-                  Repeated contributor in collaborative projects involving FastAPI,
-                  Oracle Autonomous Database, React, Docker, AWS, and OCI. I usually
-                  take ownership where backend, deployment, and system integration need to come together quickly.
-                </p>
-                <div class="timeline__tags">
-                  <span>Backend</span>
-                  <span>Cloud</span>
-                  <span>Integration</span>
-                  <span>Hackathons</span>
-                </div>
-              </div>
-            </article>
-          </div>
-        </section>
-
-        <section class="section" id="projects">
-          <div class="section-heading section-heading--split">
-            <div>
-              <p class="eyebrow">Projects</p>
-              <h2>Selected work with a few visual highlights and a broader compact list.</h2>
-            </div>
-            <p class="section-note">
-              A smaller media selection keeps the page lighter. The rest of the repositories stay text-first on purpose.
-            </p>
-          </div>
-
-          <div class="featured-projects">
-            <article class="project-card">
-              <div class="project-card__visual project-card__visual--light">
-                <img src="aux/roma-rust-logo.png" alt="roma project logo" loading="lazy" decoding="async" width="960" height="960" />
-                <span>Optimization framework</span>
-              </div>
-              <div class="project-card__body">
-                <div class="project-card__meta">
-                  <span>Rust</span>
-                  <span>Performance</span>
-                  <span>Personal</span>
-                </div>
-                <h3>roma</h3>
-                <p>
-                  Metaheuristic optimization framework built in Rust with a focus on
-                  performance, scalability, and full technical control.
-                </p>
-                <a href="https://github.com/DRLKs/roma" target="_blank" rel="noreferrer">View repository</a>
-              </div>
-            </article>
-
-            <article class="project-card">
-              <div class="project-card__visual">
-                <img src="aux/dr-artificial-demo.gif" alt="Dr. Artificial demo" loading="lazy" decoding="async" width="1280" height="720" />
-                <span>LLMs, embeddings, retrieval</span>
-              </div>
-              <div class="project-card__body">
-                <div class="project-card__meta">
-                  <span>Python</span>
-                  <span>Collaborative</span>
-                </div>
-                <h3>Dr. Artificial</h3>
-                <p>
-                  Medical assistant prototype with a web interface, Python backend,
-                  embeddings, and retrieval workflows aimed at real product utility.
-                </p>
-                <a href="https://github.com/arrozet/dr-artificial" target="_blank" rel="noreferrer">View repository</a>
-              </div>
-            </article>
-
-            <article class="project-card project-card--wide">
-              <div class="project-card__visual">
-                <img src="aux/basmati/basmati-screenshot.png" alt="Basmati calendar platform screenshot" loading="lazy" decoding="async" width="2048" height="1365" />
-                <img class="project-card__logo" src="aux/basmati/basmati-logo.png" alt="Basmati logo" loading="lazy" width="128" height="128" />
-                <span>Full-stack calendar platform</span>
-              </div>
-              <div class="project-card__body">
-                <div class="project-card__meta">
-                  <span>React</span>
-                  <span>FastAPI</span>
-                  <span>Docker / AWS</span>
-                </div>
-                <h3>basmati</h3>
-                <p>
-                  Collaborative calendar and events platform built with React, Vite, FastAPI, MongoDB,
-                  Docker, and cloud integrations. The architecture splits frontend delivery, an API gateway,
-                  service boundaries, and external integrations including Google Calendar, Teamup, OpenStreetMap, and AWS S3.
-                </p>
-                <a href="https://github.com/arrozet/basmati" target="_blank" rel="noreferrer">View repository</a>
-              </div>
-            </article>
-          </div>
-
-          <div class="compact-projects">
-            <article class="mini-project">
-              <h3>PokerHelper</h3>
-              <p>Rust desktop software for computer vision, statistical support, and Texas Hold'em decision tooling.</p>
-              <a href="https://github.com/DRLKs/PokerHelper" target="_blank" rel="noreferrer">View repository</a>
-            </article>
-            <article class="mini-project">
-              <h3>VMware vSphere ESXi Library</h3>
-              <p>Bash CLI toolkit for provisioning, cloning, and destroying virtual machines on ESXi.</p>
-              <a href="https://github.com/DRLKs/VMware-vSphere-ESXi-Library" target="_blank" rel="noreferrer">View repository</a>
-            </article>
-            <article class="mini-project">
-              <h3>Brain</h3>
-              <p>FastAPI backend with secure Oracle Autonomous Database integration for an AI-assisted chat product.</p>
-              <a href="https://github.com/arrozet/brain" target="_blank" rel="noreferrer">View repository</a>
-            </article>
-            <article class="mini-project">
-              <h3>WikiMovies</h3>
-              <p>Java and Spring Boot backend project focused on data modeling and business logic with MySQL.</p>
-              <a href="https://github.com/DRLKs/WikiMovies" target="_blank" rel="noreferrer">View repository</a>
-            </article>
-            <article class="mini-project">
-              <h3>Monkey-Pop</h3>
-              <p>React-based web game showing frontend delivery and product polish in a smaller scope.</p>
-              <a href="https://github.com/DRLKs/Monkey-Pop" target="_blank" rel="noreferrer">View repository</a>
-            </article>
-            <article class="mini-project">
-              <h3>MPS</h3>
-              <p>Java coursework centered on software maintenance, testing, and quality workflows.</p>
-              <a href="https://github.com/DRLKs/MPS" target="_blank" rel="noreferrer">View repository</a>
-            </article>
-            <article class="mini-project">
-              <h3>GestionTaller</h3>
-              <p>Kotlin Android app with database-backed functionality and mobile workflow concerns.</p>
-              <a href="https://github.com/DRLKs/GestionTaller" target="_blank" rel="noreferrer">View repository</a>
-            </article>
-            <article class="mini-project">
-              <h3>Plytix</h3>
-              <p>C# desktop application work developed in an academic setting.</p>
-              <a href="https://github.com/DRLKs/Plytix" target="_blank" rel="noreferrer">View repository</a>
-            </article>
-            <article class="mini-project">
-              <h3>MyLeetCode</h3>
-              <p>Algorithmic practice in C with a low-level engineering mindset.</p>
-              <a href="https://github.com/DRLKs/MyLeetCode" target="_blank" rel="noreferrer">View repository</a>
-            </article>
-            <article class="mini-project">
-              <h3>BashLinuxC</h3>
-              <p>Simple terminal project for operating systems coursework in C.</p>
-              <a href="https://github.com/DRLKs/BashLinuxC" target="_blank" rel="noreferrer">View repository</a>
-            </article>
-          </div>
-        </section>
-
-        <section class="section" id="cv">
-          <div class="section-heading section-heading--split">
-            <div>
-              <p class="eyebrow">CV</p>
-              <h2>Open or download my curriculum vitae.</h2>
-            </div>
-            <p class="section-note">
-              Direct access to the PDF version of my CV.
-            </p>
-          </div>
-          <div class="cv-card">
-            <p>
-              The PDF version includes the more formal summary of my background, experience, and project history.
-            </p>
-            <div class="hero__actions">
-              <a class="button button--primary" href="cv.pdf">Open CV</a>
-              <a class="button button--ghost" href="cv.pdf" download>Download PDF</a>
-            </div>
-          </div>
-        </section>
+        </footer>
       </main>
     </div>
 

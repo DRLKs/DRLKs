@@ -76,7 +76,7 @@ strong {
   flex-direction: column;
   justify-content: space-between;
   height: 100vh;
-  padding: 6rem 0;
+  padding: clamp(2.5rem, 6vh, 4.5rem) 0 clamp(1.5rem, 4vh, 3rem);
 }
 
 .header__top {
@@ -119,7 +119,7 @@ strong {
 
 /* ===== NAVIGATION ===== */
 .nav {
-  margin-top: 4rem;
+  margin-top: 2.5rem;
 }
 
 .nav ul {

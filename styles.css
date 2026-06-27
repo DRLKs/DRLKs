@@ -319,6 +319,10 @@ strong {
   line-height: 1.5;
 }
 
+.certification-link {
+  margin-top: 1rem;
+}
+
 /* ===== PROJECTS LIST ===== */
 .project-list {
   display: flex;

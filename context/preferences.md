@@ -13,7 +13,7 @@ David Muñoz del Valle prioriza proyectos con componente técnico real, especial
 - Disfruta especialmente del trabajo de operaciones e infraestructura.
 - Tiene una base sólida en Linux y se siente cómodo trabajando con SSH.
 - Ya trabaja con servicios en AWS y OCI, con objetivo claro de profundizar más en AWS.
-- Quiere obtener una certificación oficial de AWS durante el verano de 2026.
+- Completó la certificación `Architecting Solutions on AWS` de Coursera el 2026-06-25.
 - Entiende Rust como una apuesta de largo recorrido para cloud, sistemas y software de alto rendimiento.
 - Tiene varios proyectos personales abiertos en Rust y planea abrir más durante el verano de 2026.
 
@@ -41,7 +41,7 @@ David Muñoz del Valle prioriza proyectos con componente técnico real, especial
 
 David es ingeniero de software y describe la tecnología como una pasión sostenida desde la adolescencia. Disfruta construyendo productos, afrontando retos nuevos y trabajando cerca de la capa técnica real, especialmente cuando hay mezcla de desarrollo, sistemas e infraestructura.
 
-Actualmente está orientando su perfil hacia Cloud y Rust. En hackathones suele asumir el rol de operaciones e infraestructura, un área en la que se siente especialmente cómodo por su base en Linux, SSH y gestión de servicios cloud. Ya tiene experiencia práctica con AWS y OCI, y su objetivo inmediato es profundizar más en AWS y obtener una certificación oficial.
+Actualmente está orientando su perfil hacia Cloud y Rust. En hackathones suele asumir el rol de operaciones e infraestructura, un área en la que se siente especialmente cómodo por su base en Linux, SSH y gestión de servicios cloud. Ya tiene experiencia práctica con AWS y OCI, y reforzó esa línea completando la certificación `Architecting Solutions on AWS` de Coursera mientras sigue profundizando en AWS.
 
 En Rust mantiene varios proyectos activos y lo valora por su eficiencia, control y fiabilidad, alineados con su forma de entender la ingeniería. Entre los proyectos que destaca están una aplicación de escritorio orientada a jugar Texas Hold'em de forma prácticamente perfecta y un framework de optimización metaheurística centrado en el rendimiento y la eficiencia.
 

@@ -18,6 +18,7 @@ Perfil orientado a software engineering con especial fortaleza en Rust, backend,
 - DevOps en contextos de hackathon: despliegue, cloud, coordinación técnica e integración.
 - CI/CD e industrialización de soluciones de datos.
 - Machine Learning y análisis de datos aplicado.
+- Arquitectura cloud con foco práctico en AWS.
 - Integración con bases de datos y servicios cloud.
 - Desarrollo full-stack cuando el proyecto lo requiere.
 
@@ -31,6 +32,7 @@ Perfil orientado a software engineering con especial fortaleza en Rust, backend,
 ## Evidencia desde el CV
 
 - BHS Corrugated Spain: ciclo completo de datos, pipelines sobre PostgreSQL, feature engineering, CI/CD y modelos predictivos en producción.
+- Certificación `Architecting Solutions on AWS` en Coursera: arquitectura empresarial, IAM, serverless, diseño event-driven y escenarios hybrid cloud.
 - `roma`: framework de optimización 100% Rust sin dependencias externas, con soporte single y multi-objective.
 - `Brain`: Malackathon II, best solution, backend FastAPI, integración segura con Oracle Autonomous Database y consumo desde frontend.
 - `Dr. Artificial`: asistente virtual con frontend web, backend Python, LLMs y embeddings.

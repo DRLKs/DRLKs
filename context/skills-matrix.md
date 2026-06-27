@@ -17,7 +17,7 @@
 | --- | --- | --- |
 | SQL / relational data | Solid | PostgreSQL in production context, Oracle integration in hackathons. |
 | Linux / Bash | Solid | OS-level projects, scripting, deployment-oriented workflows. |
-| Cloud platforms | Solid | OCI and AWS appear repeatedly in projects and collaborations. |
+| Cloud platforms | Solid | OCI and AWS appear repeatedly in projects and collaborations, now reinforced by the Coursera `Architecting Solutions on AWS` certification. |
 | Testing / quality | Working knowledge | `MPS`, CI familiarity, software maintenance coursework. |
 | Frontend | Working knowledge | React, web interfaces for hackathons and product prototypes. |
 

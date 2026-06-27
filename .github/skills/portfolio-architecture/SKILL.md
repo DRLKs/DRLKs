@@ -110,6 +110,14 @@ Every section follows this structure:
 - Each section uses `scroll-margin-top: 6rem` for anchor offset.
 - Sections are spaced with `margin-bottom: 9rem`.
 
+## Repeated Card Formats
+
+- Experience entries keep the outer two-column layout: date on the left, content on the right.
+- Certifications should follow the same outer format instead of inventing a new card structure.
+- If a certification includes a logo, place the date on its own row first, then place the logo and text beneath it with the image on the left and the text block on the right.
+- On mobile, the certification media/content pair may collapse to one column, but desktop should preserve the image-left, text-right arrangement.
+- Preserve these patterns when updating existing entries; prefer extending the current card system over introducing one-off layouts.
+
 ## Responsive Breakpoints
 
 | Breakpoint | Behavior |

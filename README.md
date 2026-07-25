@@ -1,6 +1,17 @@
 <div align="center">
 
-## Tech Stack
+## Lenguajes y tecnologías
+
+<p align="center">
+  <img
+    src="https://skillicons.dev/icons?i=java,c,cpp,cs,python,rust,haskell,r,mysql,bash&theme=dark&perline=10"
+    alt="Java, C, C++, C#, Python, Rust, Haskell, R, SQL y Bash"
+  />
+</p>
+
+<sub>Iconos generados dinámicamente con la API de <a href="https://skillicons.dev">Skill Icons</a>.</sub>
+
+### Stack principal
 
 <p align="center">
 <img src="https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white" />
@@ -14,6 +25,12 @@
 <img src="https://img.shields.io/badge/SQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white" />
 <img src="https://img.shields.io/badge/Bash-4EAA25?style=for-the-badge&logo=gnubash&logoColor=white" />
 <img src="https://img.shields.io/badge/Assembly-0091BD?style=for-the-badge&logo=assemblyscript&logoColor=white" />
+</p>
+
+<p align="center">
+  <a href="https://github.com/DRLKs">
+    <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=DRLKs&layout=compact&theme=github_dark&hide_border=true&langs_count=8" alt="Lenguajes más utilizados en GitHub" />
+  </a>
 </p>
 
 <img src="https://github-readme-activity-graph.vercel.app/graph?username=DRLKs&theme=github-compact&hide_border=true" width="100%" />

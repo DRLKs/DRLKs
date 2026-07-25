@@ -1,7 +1,5 @@
 <div align="center">
 
-## Stack 
-
 <p align="center">
   <img
     src="https://skillicons.dev/icons?i=java,c,cpp,cs,python,rust,haskell,r,mysql,bash&theme=dark&perline=10"

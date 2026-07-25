@@ -1,0 +1,4 @@
+interface:
+  display_name: "Visual GitHub Profile"
+  short_description: "Maintains a visual profile README"
+  default_prompt: "Use $profile-readme-visual to update this profile README."

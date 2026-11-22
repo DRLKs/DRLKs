@@ -309,6 +309,29 @@ strong {
   margin-bottom: 0.75rem;
 }
 
+.experience-item__logo {
+  display: inline-flex;
+  align-items: center;
+  height: 2.75rem;
+  padding: 0.45rem 0.75rem;
+  margin-bottom: 0.75rem;
+  border-radius: 6px;
+  border: 1px solid var(--bg-lightest);
+  background-color: #fff;
+}
+
+.experience-item__logo img {
+  display: block;
+  height: 100%;
+  width: auto;
+  max-width: 7.5rem;
+  object-fit: contain;
+}
+
+.experience-item__logo--square {
+  padding: 0.3rem;
+}
+
 .certification-item__content {
   display: grid;
   grid-template-columns: minmax(120px, 180px) minmax(0, 1fr);
@@ -373,7 +396,7 @@ strong {
 
 .project-item__inner {
   display: grid;
-  grid-template-columns: 120px 1fr;
+  grid-template-columns: 168px 1fr;
   gap: 1.25rem;
   padding: 1.5rem;
   border-radius: 8px;
@@ -388,19 +411,35 @@ strong {
 }
 
 .project-item__image-wrap {
-  width: 120px;
-  height: 80px;
+  width: 168px;
+  aspect-ratio: 16 / 10;
   border-radius: 6px;
   overflow: hidden;
   border: 1px solid var(--bg-lightest);
+  background-color: var(--bg-light);
   flex-shrink: 0;
   margin-top: 0.25rem;
+  transition: var(--transition);
 }
 
-.project-item__image-wrap img {
+.project-item__image-wrap img,
+.project-item__image-wrap video {
+  display: block;
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: top left;
+}
+
+/* Logos: show the whole mark, never crop it */
+.project-item__image-wrap--logo img {
+  object-fit: contain;
+  object-position: center;
+  padding: 0.85rem;
+}
+
+.project-item__inner:hover .project-item__image-wrap {
+  border-color: rgba(100, 255, 218, 0.3);
 }
 
 .project-item__info h3 {
@@ -590,8 +629,12 @@ body::before {
 
   .project-item__image-wrap {
     width: 100%;
-    height: 120px;
+    aspect-ratio: 16 / 9;
     order: -1;
+  }
+
+  .project-item__image-wrap--logo {
+    aspect-ratio: 3 / 1;
   }
 }
 

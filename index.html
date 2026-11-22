@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Portfolio of David Muñoz del Valle, software engineer focused on backend, data engineering, and cloud systems."
+      content="Portfolio of David Muñoz del Valle, DevOps engineer focused on AWS, Terraform, CI/CD, and automation, with a passion for Rust."
     />
-    <title>David Muñoz del Valle | Software Engineer</title>
+    <title>David Muñoz del Valle | DevOps Engineer</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -22,9 +22,9 @@
         <div class="header__inner">
           <div class="header__top">
             <h1><a href="#top">David Muñoz del Valle</a></h1>
-            <h2>Software Engineer</h2>
+            <h2>DevOps Engineer</h2>
             <p class="header__subtitle">
-              I build reliable backend systems, data pipelines, and cloud infrastructure.
+              I build and operate cloud infrastructure, CI/CD pipelines, and the automation that keeps systems reliable.
             </p>
           </div>
 
@@ -33,6 +33,7 @@
               <li><a href="#about" class="nav__link"><span class="nav__indicator"></span><span class="nav__text">About</span></a></li>
               <li><a href="#experience" class="nav__link"><span class="nav__indicator"></span><span class="nav__text">Experience</span></a></li>
               <li><a href="#certifications" class="nav__link"><span class="nav__indicator"></span><span class="nav__text">Certifications</span></a></li>
+              <li><a href="#education" class="nav__link"><span class="nav__indicator"></span><span class="nav__text">Education</span></a></li>
               <li><a href="#projects" class="nav__link"><span class="nav__indicator"></span><span class="nav__text">Projects</span></a></li>
             </ul>
           </nav>
@@ -63,26 +64,24 @@
           </div>
           <div class="section__content">
             <p>
-              I'm a software engineer based in Malaga with a strong bias toward
-              <strong>backend development</strong>, <strong>data engineering</strong>,
-              and <strong>cloud infrastructure</strong>. I like working close to the
-              technical core of a product, especially when the challenge involves APIs,
-              data flows, deployment, and system integration.
+              I'm a <strong>DevOps engineer</strong> working remotely from Spain, currently an
+              Associate DevOps Engineer at <strong>Certinia</strong>. My work sits between development
+              and operations: designing and monitoring secure <strong>AWS</strong> environments with
+              <strong>Terraform</strong>, automating <strong>CI/CD</strong> with <strong>Jenkins</strong>,
+              and building the automation that keeps a data-driven team shipping reliably.
             </p>
             <p>
-              My profile is strongest when a team needs someone who can build clean services,
-              think about how they run in production, and connect the engineering work to something
-              useful and real. <strong>Rust</strong> is a defining part of my technical identity, but I also work
-              comfortably with Python, PostgreSQL, Docker, AWS, OCI, Linux, and the tooling around
-              delivery and operations.
+              I came to operations from the data side. At BHS Corrugated I built PostgreSQL-backed data
+              workflows and pushed predictive models toward production through CI/CD and MLOps practices.
+              In hackathons I usually take the infrastructure role: containers, reverse proxies, and
+              cloud deployments on AWS and OCI. I'm at home in Linux and over SSH.
             </p>
             <p>
-              I studied software engineering in Malaga and care about sound fundamentals:
-              algorithms, modeling, data structures, system design, and maintainability.
-              I recently completed Coursera's Architecting Solutions on AWS certification,
-              which fits the direction I'm building toward in production systems and cloud architecture.
-              In practice, that usually translates into software that is not only implemented well,
-              but also easier to deploy, operate, and extend over time.
+              <strong>Rust</strong> is my language of choice for tooling and systems work, from a
+              zero-dependency optimization framework to a computer-vision poker assistant. I hold a
+              B.Eng. in Software Engineering from the University of Malaga, I'm studying an
+              <strong>M.Sc. in Language Technologies</strong> at UNED, and I completed Coursera's
+              Architecting Solutions on AWS.
             </p>
           </div>
         </section>
@@ -98,22 +97,19 @@
                 <div class="experience-item__header">
                   <span class="experience-item__date">Sept 2026 — Present</span>
                   <div class="experience-item__info">
+                    <span class="experience-item__logo"><img src="aux/logos/certinia.svg" alt="Certinia logo" loading="lazy" decoding="async" width="500" height="111" /></span>
                     <h3>Associate DevOps Engineer · <span class="experience-item__company">Certinia</span></h3>
                     <p>
-                      Bridging the gap between development and operations within a data-driven team 
-                      by applying expertise in data systems and AWS. Focused on designing secure 
-                      cloud infrastructure with Terraform, streamlining CI/CD deployment pipelines 
-                      using Jenkins, and implementing engineering standards for automation 
-                      and monitoring across the infrastructure.
+                      Bridging development and operations in a data-driven team through cloud infrastructure and automation. Designing and monitoring secure AWS environments with Terraform, and streamlining deployment pipelines by automating CI/CD workflows with Jenkins.
                     </p>
                     <ul class="tag-list" aria-label="Technologies used">
                       <li class="tag">AWS</li>
                       <li class="tag">Terraform</li>
                       <li class="tag">Jenkins</li>
                       <li class="tag">CI/CD</li>
+                      <li class="tag">Monitoring</li>
                       <li class="tag">Security</li>
-                      <li class="tag">Automation</li>
-                      <li class="tag">Python</li>
+                      <li class="tag">Data Systems</li>
                     </ul>
                   </div>
                 </div>
@@ -121,21 +117,20 @@
 
               <li class="experience-item">
                 <div class="experience-item__header">
-                  <span class="experience-item__date">Mar 2026 — July 2026 </span>
+                  <span class="experience-item__date">Mar 2026 — Jun 2026</span>
                   <div class="experience-item__info">
-                    <h3>Machine Learning and Data Analysis · <span class="experience-item__company">BHS Corrugated Spain</span></h3>
+                    <span class="experience-item__logo"><img src="aux/logos/bhs.svg" alt="BHS Corrugated logo" loading="lazy" decoding="async" width="234" height="170" /></span>
+                    <h3>Data Analysis and Data Engineering · <span class="experience-item__company">BHS Corrugated Spain</span></h3>
                     <p>
-                      Architected scalable PostgreSQL-based data pipelines for extraction,
-                      feature engineering, and validation. Improved the production deployment
-                      lifecycle of predictive models through CI/CD integration and MLOps practices,
-                      helping align data science and engineering in a demanding industrial environment.
+                      Extracted and structured industrial data from PostgreSQL with Python and pandas, designed and validated predictive features and models, and grew the role toward data engineering by strengthening reliable data preparation and CI/CD operational workflows.
                     </p>
                     <ul class="tag-list" aria-label="Technologies used">
-                      <li class="tag">PostgreSQL</li>
-                      <li class="tag">Python</li>
                       <li class="tag">CI/CD</li>
                       <li class="tag">MLOps</li>
-                      <li class="tag">Production Systems</li>
+                      <li class="tag">PostgreSQL</li>
+                      <li class="tag">Python</li>
+                      <li class="tag">pandas</li>
+                      <li class="tag">Predictive Modeling</li>
                     </ul>
                   </div>
                 </div>
@@ -145,19 +140,17 @@
                 <div class="experience-item__header">
                   <span class="experience-item__date">Ongoing</span>
                   <div class="experience-item__info">
-                    <h3>Hackathons, collaboration, and fast delivery</h3>
+                    <h3>DevOps role in hackathons</h3>
                     <p>
-                      Repeated contributor in collaborative projects involving FastAPI,
-                      Oracle Autonomous Database, React, Docker, AWS, and OCI. I usually
-                      take ownership where backend, deployment, and system integration need
-                      to come together quickly.
+                      In team hackathons I own deployment and infrastructure: containerized services, Nginx reverse proxies, and cloud environments on AWS and OCI, wiring FastAPI backends to managed databases under tight deadlines. Results include Best Solution at Malackathon II and 4th place at Datathon Andalucía 2025.
                     </p>
                     <ul class="tag-list" aria-label="Technologies used">
-                      <li class="tag">FastAPI</li>
                       <li class="tag">Docker</li>
+                      <li class="tag">Docker Compose</li>
+                      <li class="tag">Nginx</li>
                       <li class="tag">AWS</li>
                       <li class="tag">OCI</li>
-                      <li class="tag">React</li>
+                      <li class="tag">Linux</li>
                     </ul>
                   </div>
                 </div>
@@ -229,6 +222,51 @@
           </div>
         </section>
 
+        <section id="education" class="section" aria-label="Education">
+          <div class="section__header-mobile">
+            <h2>Education</h2>
+          </div>
+          <div class="section__content">
+            <ol class="experience-list">
+              <li class="experience-item">
+                <div class="experience-item__header">
+                  <span class="experience-item__date">2026 — 2027</span>
+                  <div class="experience-item__info">
+                    <span class="experience-item__logo experience-item__logo--square"><img src="aux/logos/uned.png" alt="UNED logo" loading="lazy" decoding="async" width="256" height="256" /></span>
+                    <h3>M.Sc. in Language Technologies · <span class="experience-item__company">UNED</span></h3>
+                    <p>
+                      In progress. Coursework: Neural Networks for Natural Language Processing, Text Mining, and Vector and Probabilistic Text Representation.
+                    </p>
+                    <ul class="tag-list" aria-label="Topics covered">
+                      <li class="tag">NLP</li>
+                      <li class="tag">Neural Networks</li>
+                      <li class="tag">Text Mining</li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+
+              <li class="experience-item">
+                <div class="experience-item__header">
+                  <span class="experience-item__date">2022 — 2026</span>
+                  <div class="experience-item__info">
+                    <span class="experience-item__logo experience-item__logo--square"><img src="aux/logos/uma-seal.png" alt="University of Malaga seal" loading="lazy" decoding="async" width="256" height="256" /></span>
+                    <h3>B.Eng. in Software Engineering · <span class="experience-item__company">University of Malaga</span></h3>
+                    <p>
+                      Grade 7.88 / 10. Coursework: Algorithm Analysis and Design, Data Structures, Software Modeling, Design Patterns, and Backend and Cloud Computing. Final year project (<strong>roma</strong>) graded with Honors, 9.9 / 10.
+                    </p>
+                    <ul class="tag-list" aria-label="Topics covered">
+                      <li class="tag">Algorithms</li>
+                      <li class="tag">Software Design</li>
+                      <li class="tag">Cloud Computing</li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+            </ol>
+          </div>
+        </section>
+
         <section id="projects" class="section" aria-label="Selected projects">
           <div class="section__header-mobile">
             <h2>Projects</h2>
@@ -236,11 +274,9 @@
           <div class="section__content">
             <ol class="project-list">
               <li class="project-item">
-                <a class="project-item__link" href="https://github.com/DRLKs/roma" target="_blank" rel="noreferrer">
+                <a class="project-item__link" href="https://crates.io/crates/roma_lib" target="_blank" rel="noreferrer">
                   <div class="project-item__inner">
-                    <div class="project-item__image-wrap">
-                      <img src="aux/roma-rust-logo.png" alt="roma project logo" loading="lazy" decoding="async" width="200" height="200" />
-                    </div>
+                    <div class="project-item__image-wrap project-item__image-wrap--logo"><img src="aux/roma-rust-logo-rust.png" alt="Rust logo for the roma project" loading="lazy" decoding="async" width="512" height="512" /></div>
                     <div class="project-item__info">
                       <h3>
                         roma
@@ -248,10 +284,7 @@
                           <path fill-rule="evenodd" d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z" clip-rule="evenodd"/>
                         </svg>
                       </h3>
-                      <p>
-                        Metaheuristic optimization framework built in Rust with a focus on
-                        performance, scalability, and full technical control. Zero external dependencies.
-                      </p>
+                      <p>Final year project, graded with Honors (9.9 / 10). Zero-dependency metaheuristic optimization framework in Rust with single and multi-objective support, benchmarked for runtime performance against pagmo.</p>
                       <ul class="tag-list" aria-label="Technologies used">
                         <li class="tag">Rust</li>
                         <li class="tag">Performance</li>
@@ -263,27 +296,45 @@
               </li>
 
               <li class="project-item">
-                <a class="project-item__link" href="https://github.com/arrozet/dr-artificial" target="_blank" rel="noreferrer">
+                <a class="project-item__link" href="https://github.com/DRLKs/PokerHelper" target="_blank" rel="noreferrer">
                   <div class="project-item__inner">
-                    <div class="project-item__image-wrap">
-                      <img src="aux/dr-artificial-demo.gif" alt="Dr. Artificial demo" loading="lazy" decoding="async" width="200" height="112" />
-                    </div>
+                    <div class="project-item__image-wrap"><img src="aux/pokerhelper-robot.svg" alt="Minimalist poker robot holding a hand of cards" loading="lazy" decoding="async" width="624" height="390" /></div>
                     <div class="project-item__info">
                       <h3>
-                        Dr. Artificial
+                        PokerHelper
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" width="16" height="16">
                           <path fill-rule="evenodd" d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z" clip-rule="evenodd"/>
                         </svg>
                       </h3>
-                      <p>
-                        Medical assistant prototype with a web interface, Python backend,
-                        embeddings, and retrieval workflows aimed at real product utility.
-                      </p>
+                      <p>Rust desktop assistant for Game Theory Optimal decision support in Texas Hold'em. Combines computer vision with game-state reconstruction to estimate strategically sound actions from the live table.</p>
                       <ul class="tag-list" aria-label="Technologies used">
-                        <li class="tag">Python</li>
-                        <li class="tag">LLMs</li>
-                        <li class="tag">Embeddings</li>
-                        <li class="tag">RAG</li>
+                        <li class="tag">Rust</li>
+                        <li class="tag">Computer Vision</li>
+                        <li class="tag">Game Theory</li>
+                        <li class="tag">In Development</li>
+                      </ul>
+                    </div>
+                  </div>
+                </a>
+              </li>
+
+              <li class="project-item">
+                <a class="project-item__link" href="https://github.com/DRLKs/VMware-vSphere-ESXi-Library" target="_blank" rel="noreferrer">
+                  <div class="project-item__inner">
+                    <div class="project-item__image-wrap project-item__image-wrap--logo"><img src="aux/VMware-thumb.png" alt="VMware logo" loading="lazy" decoding="async" width="256" height="256" /></div>
+                    <div class="project-item__info">
+                      <h3>
+                        VMware vSphere ESXi Library
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" width="16" height="16">
+                          <path fill-rule="evenodd" d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z" clip-rule="evenodd"/>
+                        </svg>
+                      </h3>
+                      <p>Bash CLI toolkit for provisioning, cloning, and destroying virtual machines on ESXi hosts, turning repetitive lab setup into scripted, repeatable operations.</p>
+                      <ul class="tag-list" aria-label="Technologies used">
+                        <li class="tag">Bash</li>
+                        <li class="tag">VMware ESXi</li>
+                        <li class="tag">Automation</li>
+                        <li class="tag">Linux</li>
                       </ul>
                     </div>
                   </div>
@@ -293,9 +344,7 @@
               <li class="project-item">
                 <a class="project-item__link" href="https://github.com/arrozet/basmati" target="_blank" rel="noreferrer">
                   <div class="project-item__inner">
-                    <div class="project-item__image-wrap">
-                      <img src="aux/basmati/basmati-screenshot.png" alt="Basmati calendar platform screenshot" loading="lazy" decoding="async" width="200" height="133" />
-                    </div>
+                    <div class="project-item__image-wrap"><img src="aux/basmati/basmati-thumb.webp" alt="Basmati calendar platform screenshot" loading="lazy" decoding="async" width="960" height="540" /></div>
                     <div class="project-item__info">
                       <h3>
                         basmati
@@ -303,36 +352,13 @@
                           <path fill-rule="evenodd" d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z" clip-rule="evenodd"/>
                         </svg>
                       </h3>
-                      <p>
-                        Collaborative calendar and events platform built with React, Vite, FastAPI, MongoDB,
-                        Docker, and cloud integrations including Google Calendar, Teamup, OpenStreetMap, and AWS S3.
-                      </p>
+                      <p>Microservice calendar and events platform (React, FastAPI, MongoDB) packaged with Docker Compose behind Nginx, with GitHub Actions and a documented AWS EC2 deployment plus S3, Google Calendar, and Teamup integrations.</p>
                       <ul class="tag-list" aria-label="Technologies used">
-                        <li class="tag">React</li>
+                        <li class="tag">Docker Compose</li>
+                        <li class="tag">Nginx</li>
+                        <li class="tag">AWS EC2</li>
+                        <li class="tag">GitHub Actions</li>
                         <li class="tag">FastAPI</li>
-                        <li class="tag">Docker</li>
-                        <li class="tag">AWS</li>
-                      </ul>
-                    </div>
-                  </div>
-                </a>
-              </li>
-
-              <li class="project-item">
-                <a class="project-item__link" href="https://github.com/DRLKs/PokerHelper" target="_blank" rel="noreferrer">
-                  <div class="project-item__inner">
-                    <div class="project-item__info">
-                      <h3>
-                        PokerHelper
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" width="16" height="16">
-                          <path fill-rule="evenodd" d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z" clip-rule="evenodd"/>
-                        </svg>
-                      </h3>
-                      <p>Rust desktop software for computer vision, statistical support, and Texas Hold'em decision tooling.</p>
-                      <ul class="tag-list" aria-label="Technologies used">
-                        <li class="tag">Rust</li>
-                        <li class="tag">Computer Vision</li>
-                        <li class="tag">Statistics</li>
                       </ul>
                     </div>
                   </div>
@@ -349,10 +375,12 @@
                           <path fill-rule="evenodd" d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z" clip-rule="evenodd"/>
                         </svg>
                       </h3>
-                      <p>FastAPI backend with secure Oracle Autonomous Database integration for an AI-assisted chat product.</p>
+                      <p><strong>Malackathon II Best Solution.</strong> Built and deployed the FastAPI backend of a mental health data platform on Oracle Autonomous Database, plus the integration layer for an AI-assisted chat over clinical and statistical data.</p>
                       <ul class="tag-list" aria-label="Technologies used">
                         <li class="tag">FastAPI</li>
                         <li class="tag">Oracle ADB</li>
+                        <li class="tag">OCI</li>
+                        <li class="tag">Nginx</li>
                         <li class="tag">Python</li>
                       </ul>
                     </div>
@@ -361,20 +389,22 @@
               </li>
 
               <li class="project-item">
-                <a class="project-item__link" href="https://github.com/DRLKs/VMware-vSphere-ESXi-Library" target="_blank" rel="noreferrer">
+                <a class="project-item__link" href="https://github.com/arrozet/dr-artificial" target="_blank" rel="noreferrer">
                   <div class="project-item__inner">
+                    <div class="project-item__image-wrap"><video src="aux/dr-artificial/demo.mp4" poster="aux/dr-artificial/poster.jpg" autoplay muted loop playsinline preload="metadata" width="800" height="384" aria-label="Dr. Artificial demo"></video></div>
                     <div class="project-item__info">
                       <h3>
-                        VMware vSphere ESXi Library
+                        Dr. Artificial
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" width="16" height="16">
                           <path fill-rule="evenodd" d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z" clip-rule="evenodd"/>
                         </svg>
                       </h3>
-                      <p>Bash CLI toolkit for provisioning, cloning, and destroying virtual machines on ESXi.</p>
+                      <p><strong>4th place, Datathon Andalucía 2025.</strong> Core backend for a chatbot-style medical assistant with RAG over patient data and persistent conversational memory.</p>
                       <ul class="tag-list" aria-label="Technologies used">
-                        <li class="tag">Bash</li>
-                        <li class="tag">VMware</li>
-                        <li class="tag">ESXi</li>
+                        <li class="tag">Python</li>
+                        <li class="tag">RAG</li>
+                        <li class="tag">Embeddings</li>
+                        <li class="tag">LLMs</li>
                       </ul>
                     </div>
                   </div>

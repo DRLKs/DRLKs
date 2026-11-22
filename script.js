@@ -45,3 +45,10 @@ if (window.location.hash) {
 } else {
   setActive('about');
 }
+// Respect reduced motion: keep demo videos paused on their poster frame
+if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+  document.querySelectorAll('video[autoplay]').forEach((video) => {
+    video.removeAttribute('autoplay');
+    video.pause();
+  });
+}

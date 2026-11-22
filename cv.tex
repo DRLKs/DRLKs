@@ -1,0 +1,268 @@
+% Para correr: pdflatex cv.tex
+\documentclass[10pt,a4paper]{article}
+
+%-------------------------------------------------------------------------------
+%    PACKAGES
+%-------------------------------------------------------------------------------
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{helvet}
+\usepackage{graphicx}
+\usepackage[
+  left=0.5in, right=0.5in,
+  top=0.5in, bottom=0.5in
+]{geometry}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{xcolor}
+\usepackage{tabularx}
+\usepackage{hyperref}
+\usepackage{accsupp}
+\usepackage{xparse}
+
+%-------------------------------------------------------------------------------
+%    FONT AND COLOR DEFINITIONS
+%-------------------------------------------------------------------------------
+\renewcommand{\familydefault}{\sfdefault}
+
+\definecolor{customgray}{RGB}{128, 128, 128}
+\definecolor{linkblue}{RGB}{70, 120, 134}
+\definecolor{sectiongray}{RGB}{128,128,128}
+
+%-------------------------------------------------------------------------------
+%    HYPERLINK SETUP
+%-------------------------------------------------------------------------------
+\hypersetup{
+    colorlinks=false,
+    pdfborder={0 0 0},
+    pdftitle={David Munoz del Valle - Curriculum Vitae},
+    pdfauthor={David Munoz del Valle}
+}
+
+\graphicspath{{../../shared/icons/}}
+
+%-------------------------------------------------------------------------------
+%    LAYOUT AND SPACING
+%-------------------------------------------------------------------------------
+\titleformat{\section}
+  {\color{sectiongray}\normalfont\sffamily\bfseries\fontsize{14}{16}\selectfont}
+  {}
+  {0em}
+  {}[\color{sectiongray}{\titlerule[0.8pt]}]
+\titlespacing*{\section}{0pt}{7pt}{3.5pt}
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{1.5pt}
+
+\setlist[itemize,1]{
+  label=\textbullet,
+  leftmargin=1em,
+  topsep=1.2pt,
+  itemsep=1pt,
+  labelindent=0.5em
+}
+
+%-------------------------------------------------------------------------------
+%    CUSTOM COMMANDS
+%-------------------------------------------------------------------------------
+\newcommand{\dateright}[1]{\hfill{\color{customgray}#1}}
+\newcommand{\locationright}[1]{\hfill{\color{customgray}#1}}
+\newcommand{\ul}[1]{\underline{#1}}
+\newcommand{\hlink}[2]{\href{#1}{\color{linkblue}\ul{\textbf{#2}}}}
+
+\newcommand{\cveducation}[6]{%
+  \textbf{#1} --- {#2} \dateright{#3}\\
+  \textit{#4} \locationright{#5}
+  \begin{itemize}
+    #6
+  \end{itemize}
+}
+
+\newcommand{\cvexperience}[7]{%
+  \textbf{#1} {#2} \dateright{#3}\\
+  \textit{#4, #5} \locationright{#6}
+  \begin{itemize}
+    #7
+  \end{itemize}
+}
+
+\NewDocumentCommand{\cvproject}{s O{} m m m m}{%
+    \IfBooleanTF{#1}{
+        \if\relax\detokenize{#2}\relax
+            \textbf{#3} \textbf{#4}\dateright{#5}
+        \else
+            \hlink{#2}{#3} \textbf{#4}\dateright{#5}
+        \fi
+    }{
+        \if\relax\detokenize{#2}\relax
+            \textbf{#3}, \textbf{#4}\dateright{#5}
+        \else
+            \hlink{#2}{#3}, \textbf{#4}\dateright{#5}
+        \fi
+    }
+    \begin{itemize}#6\end{itemize}
+}
+
+\newcommand{\skill}[2]{\textbf{#1} & {\color{customgray}#2}}
+
+\input{../../shared/cv-header.tex}
+
+% Public CV: same header as the shared one, but without the phone number
+\renewcommand{\cvheader}{%
+\begin{center}
+    {\fontsize{15.5}{17.5}\selectfont\bfseries David Muñoz}\\[0.14em]
+    {\fontsize{10.8}{12.6}\selectfont Remote | Algeciras, Spain}\\[0.36em]
+    {\fontsize{9.2}{10.5}\selectfont
+    \cvcontactitem{\iconimg[email:]{email}}{mailto:davidmunvalle@gmail.com}{davidmunvalle@gmail.com}
+    \\[0.18em]
+    \cvcontactitem{\iconimg[linkedin:]{linkedin}}{https://www.linkedin.com/in/david-munoz-del-valle/}{linkedin.com/in/david-munoz-del-valle}
+    \enspace|\enspace
+    \cvcontactitem{\iconimg[portfolio:]{portfolio}}{https://drlks.github.io/DRLKs/}{portfolio}
+    \enspace|\enspace
+    \cvcontactitem{\iconimg[github:]{github}}{https://github.com/DRLKS}{github.com/DRLKS}}
+\end{center}
+}
+
+\newcommand{\cvcertification}[5]{%
+  \textbf{#1} --- {#2} \dateright{#3}\\
+  \textit{Credential Verification: \hlink{#4}{View Credential}}
+  \begin{itemize}
+    #5
+  \end{itemize}
+}
+%-------------------------------------------------------------------------------
+%    DOCUMENT START
+%-------------------------------------------------------------------------------
+\begin{document}
+\pagestyle{empty}
+\fontsize{8.5}{9.5}\selectfont
+
+\cvheader
+
+\vspace{-0.1em}
+
+\section{EXPERIENCE}
+
+\cvexperience
+    {Associate DevOps Engineer}
+    {(AWS, Terraform, Jenkins, CI/CD, Data Systems)}
+    {Sept. 2026 -- Present}
+    {\hlink{https://www.certinia.com/about-us/}{Certinia}}
+    {Bridging development and operations in a data-driven team through cloud infrastructure and automation}
+    {Spain}
+    {
+    \item Monitoring and designing secure AWS cloud environments with Terraform.
+    \item Streamlining deployment pipelines and automating continuous integration/continuous deployment (CI/CD) workflows using Jenkins.
+    }
+
+\cvexperience
+    {Data Analysis and Data Engineering}
+    {(Python, pandas, PostgreSQL, predictive modeling, CI/CD, MLOps)}
+    {Mar. 2026 -- Jun. 2026}
+    {\hlink{https://www.bhs-world.com/}{BHS Corrugated Spain}}
+    {Production-oriented data analysis and machine learning workflows in an industrial environment}
+    {Spain}
+    {
+    \item Extracted and structured industrial data from PostgreSQL with Python and pandas to support operational decision-making and downstream machine learning use cases.
+    \item Designed and validated predictive features and models for industrial scenarios, connecting exploratory analysis with production-focused implementation.
+    \item Expanded the role from data analysis toward data engineering by strengthening reliable data preparation and CI/CD operational workflows.
+    }
+
+\section{EDUCATION}
+\cveducation
+    {M.Sc. in Language Technologies}
+    {In progress (60 ECTS)}
+    {2026 -- 2027}
+    {UNED (National Distance Education University)}
+    {Online, Spain}
+    {
+        \item Coursework: Neural Networks for Natural Language Processing, Text Mining, Vector and Probabilistic Text Representation.
+    }
+
+\cveducation
+    {B.Eng. in Software Engineering}
+    {7.88 / 10.00 (equivalent GPA: 3.15 / 4.00)}
+    {2022 -- 2026}
+    {University of Malaga}
+    {Malaga, Spain}
+    {
+        \item Coursework: Algorithm Analysis and Design, Data Structures, Software Modeling, Design Patterns, Backend and Cloud Computing.
+    }
+
+\section{CERTIFICATIONS}
+
+\cvcertification
+    {Architecting Solutions on AWS}
+    {Coursera}
+    {Jun. 2026}
+    {https://www.coursera.org/account/accomplishments/verify/E5Q4AG7TJ23T}
+    {
+        \item Applied AWS architecture principles across scalability, security, reliability, IAM, and event-driven serverless systems.
+    }
+
+\section{PROJECTS}
+\cvproject*[https://crates.io/crates/roma_lib]
+    {roma}
+    {Final Year Project: metaheuristic optimization framework (Rust) -- \textbf{Honors, 9.9/10; zero-dependency design}}
+    {Jun. 2026}
+{
+    \item Engineered a 100\% Rust metaheuristic optimization framework with zero external dependencies, emphasizing reusable abstractions and efficient execution.
+    \item Integrated single and multi-objective optimization in one library and benchmarked competitive runtime performance against \textit{pagmo}.
+}
+
+\cvproject[https://github.com/arrozet/brain]
+    {Brain}
+    {Mental health data platform with AI search chat (Python, FastAPI, Oracle Autonomous Database) -- \textbf{Malackathon II Best Solution}}
+    {Oct. 2025}
+    {
+        \item Built and deployed the FastAPI backend for a mental health data platform backed by Oracle Autonomous Database, structuring disease, patient, and statistical data for dashboard consumption.
+        \item Implemented the integration layer for an AI-assisted chat that enables targeted retrieval of specific clinical and analytical information.
+    }
+
+\cvproject[https://github.com/arrozet/dr-artificial]
+    {Dr. Artificial}
+    {ChatBot-style medical assistant with RAG and memory (Python, embeddings, retrieval) -- \textbf{4th Place}}
+    {Mar. 2025}
+    {
+        \item Developed core backend for a ChatBot-style medical assistant with RAG over patient information and persistent conversational memory.
+        \item Grounded multi-turn responses in retrieved clinical context through embeddings and retrieval workflows exposed through a web frontend.
+    }
+
+\cvproject[https://github.com/DRLKS/PokerHelper]
+    {PokerHelper}
+    {Game Theory Optimal Texas Hold'em decision-support tool (Rust, computer vision, game-state)}
+    {In Development}
+    {
+        \item Developing a Rust desktop assistant for Game Theory Optimal decision support in Texas Hold'em.
+        \item Combines computer vision with game-state reconstruction to estimate strategically sound actions from live table context.
+    }
+
+\cvproject[https://github.com/DRLKs/WikiMovies]
+    {WikiMovies}
+    {Backend movie database API (Java, Spring Boot, REST API)}
+    {Jun. 2025}
+    {
+        \item Designed a Java and Spring Boot REST API with layered architecture spanning routing, business logic, and persistence.
+        \item Emphasized clean backend structure and maintainability through explicit separation of concerns.
+    }
+
+\cvproject[https://github.com/DRLKs/VMware-vSphere-ESXi-Library]
+    {VMware vSphere ESXi CLI Library}
+    {VM lifecycle automation toolkit (Bash, VMware ESXi CLI)}
+    {Jun. 2025}
+    {
+        \item Built a Bash toolkit to provision, clone, and destroy virtual machines directly from the VMware ESXi CLI.
+        \item Streamlined repetitive VM lifecycle operations through lightweight infrastructure automation.
+    }
+
+\section{SKILLS}
+\begin{itemize}[label={-}]
+    \item \textbf{Programming Languages:} Rust, Python, SQL, Java, Bash, C, C++, C\#, Haskell
+    \item \textbf{AI \& Data:} pandas, embeddings, retrieval workflows, feature engineering, predictive modeling, PostgreSQL, data pipelines
+    \item \textbf{Backend:} FastAPI, Spring Boot, REST APIs, Oracle Autonomous Database
+    \item \textbf{Cloud \& DevOps:} Terraform, Jenkins, Git, GitHub, Linux, Docker, CI/CD, AWS (EC2, Lambda, IAM, S3, CloudFormation), OCI, Nginx
+    \item \textbf{Frontend:} React, TypeScript, Vite, HTML, CSS
+    \item \textbf{Speaks:} Spanish (Native), English (Professional), French (Elementary)
+\end{itemize}
+
+\end{document}
